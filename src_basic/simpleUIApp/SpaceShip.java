@@ -133,7 +133,7 @@ class SpaceShip extends Item {
 			}
 		}
 		
-		if (!objective.contains(this)) {
+		if (!objective.intersection(this)) {
 			if (waitingTurn==0){
 			double newx = center.getX();
 			double newy = center.getY();
