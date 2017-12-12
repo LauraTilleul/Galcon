@@ -64,7 +64,7 @@ class SpaceShip extends Item {
 		Planet p= (Planet) this.getObjective();
 		Player tmp= p.getPlayer(); 
 		if ((this.samePlayer(p) == true)){
-			p.setNumberSpaceShips(p.getNumberSpaceShips() +1); // when ships going to one of the player's planet, just incrementing from 1
+			p.setNumberSpaceShips(p.getNumberSpaceShips() +1); // when ships going to one of the player's planet, just incrementing of 1
 		}
 		else {
 			if (tmp.isNeutral()){
@@ -145,7 +145,7 @@ class SpaceShip extends Item {
 			}
 			
 			else {
-			if (newx > objective.getLocation().getX()) { // need to handle the cases newx== objective.getLocation().getX() and newy==objective.getLocation().getY()
+			if (newx > objective.getLocation().getX()) { 
 				newx--;
 			} else {
 				if (newx < objective.getLocation().getX()){
